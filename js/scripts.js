@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("button.submit").click(function(event){
     $(".survey").hide();
-    event.preventDefault();
+      event.preventDefault();
       var firstName = $('#first-name').val();
       var lastName = $('#last-name').val();
       var creativity = parseInt($('input:radio[name=creativity]:checked').val());
@@ -41,6 +41,5 @@ $(document).ready(function() {
     $('#singularity').hide();
     $('#victory').show();
     document.body.style.backgroundColor = "black";
-
   });
 });

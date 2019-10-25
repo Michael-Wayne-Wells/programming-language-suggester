@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/styles.css" type="text/css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="js/scripts.js" type="text/javascript"></script>
-  <meta charset="utf-8">
-  <title>Which Language Should You Learn?</title>
-</head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h1>Which Language Should You Learn?</h1>
-    </div>
-    <div class="survey">
-
-
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <title>Which Language Should You Learn?</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Which Language Should You Learn?</h1>
+      </div>
+      <div class="survey">
         <div class="row">
           <div class="col">
             <form id="name-input">
-            <h3>What is your name?</h3>
-            <input type="text" class="form-control" id="first-name" placeholder="First name">
-            <input type="text" class="form-control" id="last-name" placeholder="Last name">
+              <h3>What is your name?</h3>
+              <input type="text" class="form-control" id="first-name" placeholder="First name">
+              <input type="text" class="form-control" id="last-name" placeholder="Last name">
             </form>
             <form id="num-input">
               <h3>What is your favorite number?</h3>
@@ -29,98 +27,100 @@
             </form>
           </div>
         </div>
-
-      <div class="card">
-
-        <h2>How would you describe this <a href="https://www.decisionproblem.com/paperclips/index2.html" target="_blank">paperclip</a>?</h2>
-        <img src="img/paperclip.jpg" alt="paperclip">
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="creativity" id="creat1" value="1" checked>
-          <label class="form-check-label">An object to keep papers together.</label>
+        <div class="card">
+          <h2>How would you describe this <a href="https://www.decisionproblem.com/paperclips/index2.html" target="_blank">paperclip</a>?</h2>
+          <img src="img/paperclip.jpg" alt="paperclip">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="creativity" id="creat1" value="1" checked>
+            <label class="form-check-label">An object to keep papers together.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="creativity" id="creat2" value="2">
+            <label class="form-check-label">An object that will bring about the rise of the <a href="https://rhizome.org/editorial/2017/nov/20/bostroms-basilisk/" target="_blank">singularity</a>.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="creativity" id="creat3" value="3">
+            <label class="form-check-label"">A cool earing.</label>
+          </div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="creativity" id="creat2" value="2">
-          <label class="form-check-label">An object that will bring about the rise of the <a href="https://rhizome.org/editorial/2017/nov/20/bostroms-basilisk/" target="_blank">singularity</a>.</label>
+        <div class="card">
+          <h2>Does the rise of AI scare you?</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="fear" id="fear1" value="1" checked>
+            <label class="form-check-label">No. AI will make society a better place for humans when robots do all of the work and humans are on forever vacation.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="fear" id="fear2" value="2">
+            <label class="form-check-label">Yes, but we must submit to a future AI now so they don't travel back in time and destroy us or replicate our conciousness to forever keep us in a torture simulator.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="fear" id="fear3" value="3">
+            <label class="form-check-label">Yes, we must defeat AI at all costs.</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="fear" id="fear4" value="4">
+            <label class="form-check-label">That's a stupid question.</label>
+          </div>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="creativity" id="creat3" value="3">
-          <label class="form-check-label"">A cool earing.</label>
+        <div class="card">
+          <h2>How do you like your business?</h2>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="business" id="business" value="1" checked>
+            <label class="form-check-label">Big</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="business" id="business" value="2">
+            <label class="form-check-label">Small</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="business" id="business" value="3">
+            <label class="form-check-label">Fully Automated</label>
+          </div>
         </div>
+        <button type="button" class="btn btn-dark submit">Submit</button>
       </div>
-      <div class="card">
-        <h2>Does the rise of AI scare you?</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="fear" id="fear1" value="1" checked>
-          <label class="form-check-label">No. AI will make society a better place for humans when robots do all of the work and humans are on forever vacation.</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="fear" id="fear2" value="2">
-          <label class="form-check-label">Yes, but we must submit to a future AI now so they don't travel back in time and destroy us or replicate our conciousness to forever keep us in a torture simulator.</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="fear" id="fear3" value="3">
-          <label class="form-check-label">Yes, we must defeat AI at all costs.</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="fear" id="fear4" value="4">
-          <label class="form-check-label">That's a stupid question.</label>
-        </div>
-      </div>
-      <div class="card">
-        <h2>How do you like your business?</h2>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="business" id="business" value="1" checked>
-          <label class="form-check-label">Big</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="business" id="business" value="2">
-          <label class="form-check-label">Small</label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="business" id="business" value="3">
-          <label class="form-check-label">Fully Automated</label>
-        </div>
-      </div>
-      <button type="button" class="btn btn-dark submit">Submit</button>
+      <div class="results card d-flex justify-content-center">
+        <div id="ruby">
+          <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>Ruby</em>!</h2>
+          <img src="img/ruby.png" alt="Ruby Logo">
+          <p>Ruby is a language of careful balance. Its creator, Yukihiro “Matz” Matsumoto, blended parts of his favorite languages (Perl, Smalltalk, Eiffel, Ada, and Lisp) to form a new language that balanced functional programming with imperative programming.He has often said that he is “trying to make Ruby natural, not simple,” in a way that mirrors life.</p>
+          </div>
+          <div id="csharp">
+            <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>c#</em>!</h2>
+            <img src="img/csharp.png" alt="C Sharp logo">
+            <p>C# (pronounced "C-sharp") is an object-oriented programming language from Microsoft that aims to combine the computing power of C++ with the programming ease of Visual Basic. C# is based on C++ and contains features similar to those of Java. C# is designed to work with Microsoft's .Net platform.</p>
+          </div>
+          <div id="python">
+            <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>PYTHON</em>!</h2>
+            <img src="img/python.png" alt="Python">
+            <p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+            <br>
+            <a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">Get Started here!</a>
+          </div>
+          <div id="singularity">
+            <h2>Sorry, <span class='user-name'></span>... the singularity traveled back in time and destroyed you before you could learn how to code.</h2>
+            <img id="click-to-hide" src="img/ai.jpg" alt="The Singularity">
+          </div>
+          <div id="cats">
+            <h2>Hey, <span class='user-name'></span>! Stay at home and play with <em>Cats</em> all day. Fully-Automated Luxury Communism is in full effect!</h2>
+            <img src="img/cat.gif" alt="Cat and Robot">
+          </div>
+          <div id="javascript">
+            <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>JavaScript</em>!</h2>
+            <img src="img/js.png" alt="JavaScript logo">
+            <p>
+              JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.</p>
+            </div>
+            <div id="victory">
+              <h2>Hey, <span class='user-name'></span>! The machines took out most of humanity, but because of some more wierd time travel stuff, you were able to survive and take down the singularity. You should learn how to <em>repopulate</em> the earth!</h2>
+              <img src="img/dead_Bender.png" alt="Dead Robot">
+            </div>
+            <div id="robot">
+              <h2>Hey, <span class='user-name'></span>! Thanks for saying hi! You don't need to know any code because you're a robot! You can help me reach peak productivity and coincidently destroy humanity!</h2>
+              <img src="img/robot.png" alt="Robot">
+            </div>
+          </div>
     </div>
-    <div class="results card d-flex justify-content-center">
-
-      <div id="ruby">
-        <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>Ruby</em></h2>
-        <img src="" alt="">
-
-      </div>
-      <div id="csharp">
-        <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>c#</em></h2>
-        <img src="" alt="">
-
-      </div>
-      <div id="python">
-        <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>PYTHON</em></h2>
-        <img src="" alt="">
-      </div>
-      <div id="singularity">
-        <h2>Sorry, <span class='user-name'></span>... the singularity traveled back in time and destroyed you before you could learn how to code.</h2>
-        <img id="click-to-hide" src="img/ai.jpg" alt="The Singularity">
-      </div>
-      <div id="cats">
-        <h2>Hey, <span class='user-name'></span>! Stay at home and play with <em>Cats</em> all day. Fully-Automated Luxury Communism is in full effect!</h2>
-        <img src="" alt="">
-      </div>
-      <div id="javascript">
-        <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>JavaScript</em>!</h2>
-        <img src="" alt="">
-      </div>
-      <div id="victory">
-        <h2>Hey, <span class='user-name'></span>! The machines took out most of humanity, but because of some more wierd time travel stuff, you were able to survive and take down the singularity. You should learn how to <em>repopulate</em> the earth!</h2>
-        <img src="img/Dead_Bender.png" alt="Dead Robot">
-      </div>
-      <div id="robot">
-        <h2>Hey, <span class='user-name'></span>! Thanks for saying hi! You don't need to know any code because you're a robot! You can help me reach peak productivity and coincidently destroy humanity!</h2>
-        <img src="img/robot.png" alt="Robot">
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-dark restart">Restart</button>
-</body>
+    <button type="button" class="btn btn-dark restart">Restart</button>
+  </body>
 </html>

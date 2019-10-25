@@ -25,6 +25,10 @@ body {
    text-align: center;
    width 70%;
  }
+
+ .results p{
+   text-align: left;
+ }
 #name-input, #num-input{
   width: 300px;
 }
@@ -92,4 +96,16 @@ a {
 :hover a {
   text-decoration: none;
   color: black;
+}
+
+.results img {
+  float: right;
+}
+
+.results a {
+  text-decoration: underline;
+}
+:hover a.results {
+  color: blue;
+  cursor: default;
 }
