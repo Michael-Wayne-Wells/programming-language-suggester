@@ -10,15 +10,15 @@ $(document).ready(function() {
       var workTraits = creativity + business;
       var userName = firstName + lastName;
       var favNumber = $('#fav-number').val();
+      var favFood = $('#fav-food').val();
       $('.user-name').text(firstName);
+      $('.food').text(favFood);
       if (userName === "JohnConnor") {
         $('#victory').show();
         document.body.style.backgroundColor = "black";
-      }
-      if (favNumber === "01101000 01101001") {
+      } else if (favNumber === "01101000 01101001") {
         $('#robot').show();
-      }
-      if (business === 3 && creativity === 3 && fear === 1) {
+      } else if (business === 3 && creativity === 3 && fear === 1) {
         $('#cats').show();
       } else if (fear === 3 || creativity === 2 && fear >= 3){
         $('#singularity').show();
@@ -33,7 +33,7 @@ $(document).ready(function() {
         $('#javascript').show();
       }
     });
-    $("button.restart").click(function(event){
+    $("button.restart").click(function(event) {
     location.reload();
     });
     $("#click-to-hide").click(function() {

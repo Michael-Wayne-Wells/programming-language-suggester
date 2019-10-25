@@ -23,7 +23,7 @@
             </form>
             <form id="num-input">
               <h3>What is your favorite number?</h3>
-              <input type="number" class="form-control" id="fav-number" placeholder="Enter a Number">
+              <input type="text" class="form-control" id="fav-number" placeholder="Enter a Number">
             </form>
           </div>
         </div>
@@ -77,6 +77,10 @@
             <label class="form-check-label">Fully Automated</label>
           </div>
         </div>
+        <form id="food-input">
+          <h3>What is your favorite food?</h3>
+          <input type="text" class="form-control" id="fav-food" placeholder="enter a food">
+        </form>
         <button type="button" class="btn btn-dark submit">Submit</button>
       </div>
       <div class="results card d-flex justify-content-center">
@@ -98,12 +102,12 @@
             <a href="https://wiki.python.org/moin/BeginnersGuide/Programmers">Get Started here!</a>
           </div>
           <div id="singularity">
-            <h2>Sorry, <span class='user-name'></span>... the singularity traveled back in time and destroyed you before you could learn how to code.</h2>
-            <img id="click-to-hide" src="img/ai.jpg" alt="The Singularity">
+            <h2>Sorry, <span class='user-name'></span>... the singularity traveled back in time and destroyed you before you could learn how to code. No <span class="food"></span> for you!</h2>
+            <img class="easter-egg" id="click-to-hide" src="img/ai.jpg" alt="The Singularity">
           </div>
           <div id="cats">
             <h2>Hey, <span class='user-name'></span>! Stay at home and play with <em>Cats</em> all day. Fully-Automated Luxury Communism is in full effect!</h2>
-            <img src="img/cat.gif" alt="Cat and Robot">
+            <img class="easter-egg" src="img/cat.gif" alt="Cat and Robot">
           </div>
           <div id="javascript">
             <h2>Hey, <span class='user-name'></span>! Your mind is programmed to program <em>JavaScript</em>!</h2>
@@ -112,12 +116,12 @@
               JavaScript, often abbreviated as JS, is a high-level, interpreted scripting language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions. Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it, and major web browsers have a dedicated JavaScript engine to execute it.</p>
             </div>
             <div id="victory">
-              <h2>Hey, <span class='user-name'></span>! The machines took out most of humanity, but because of some more wierd time travel stuff, you were able to survive and take down the singularity. You should learn how to <em>repopulate</em> the earth!</h2>
-              <img src="img/dead_Bender.png" alt="Dead Robot">
+              <h2>Hey, <span class='user-name'></span>! The machines took out most of humanity, but because of some more wierd time travel stuff, you were able to survive and take down the singularity. You should learn how to <em>repopulate</em> the earth! Also, you look hungry! Have some <span class="food"></span>!</h2>
+              <img class="easter-egg" src="img/dead_Bender.png" alt="Dead Robot">
             </div>
             <div id="robot">
               <h2>Hey, <span class='user-name'></span>! Thanks for saying hi! You don't need to know any code because you're a robot! You can help me reach peak productivity and coincidently destroy humanity!</h2>
-              <img src="img/robot.png" alt="Robot">
+              <img class="easter-egg" src="img/robot.png" alt="Robot">
             </div>
           </div>
     </div>
