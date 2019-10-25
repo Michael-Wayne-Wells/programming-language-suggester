@@ -14,25 +14,33 @@
       <h1>Which Language Should You Learn?</h1>
     </div>
     <div class="survey">
-      <form id="name-input">
-        <h3>What is your name?</h3>
+
+
         <div class="row">
           <div class="col">
+            <form id="name-input">
+            <h3>What is your name?</h3>
             <input type="text" class="form-control" id="first-name" placeholder="First name">
             <input type="text" class="form-control" id="last-name" placeholder="Last name">
+            </form>
+            <form id="num-input">
+              <h3>What is your favorite number?</h3>
+              <input type="number" class="form-control" id="fav-number" placeholder="Enter a Number">
+            </form>
           </div>
         </div>
-      </form>
+
       <div class="card">
-        <h2>How would you describe this paperclip?</h2>
-        <img src="" alt="">
+
+        <h2>How would you describe this <a href="https://www.decisionproblem.com/paperclips/index2.html" target="_blank">paperclip</a>?</h2>
+        <img src="img/paperclip.jpg" alt="paperclip">
         <div class="form-check">
           <input class="form-check-input" type="radio" name="creativity" id="creat1" value="1" checked>
           <label class="form-check-label">An object to keep papers together.</label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="creativity" id="creat2" value="2">
-          <label class="form-check-label">An object that will bring about the rise of the singularity.</label>
+          <label class="form-check-label">An object that will bring about the rise of the <a href="https://rhizome.org/editorial/2017/nov/20/bostroms-basilisk/" target="_blank">singularity</a>.</label>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="creativity" id="creat3" value="3">
@@ -59,7 +67,7 @@
         </div>
       </div>
       <div class="card">
-        <h2>How do you like your busines?</h2>
+        <h2>How do you like your business?</h2>
         <div class="form-check">
           <input class="form-check-input" type="radio" name="business" id="business" value="1" checked>
           <label class="form-check-label">Big</label>
