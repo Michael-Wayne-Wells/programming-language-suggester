@@ -1,4 +1,4 @@
-#csharp, #python, #ruby, #singularity, #cats, #javascript, #victory {
+#csharp, #python, #ruby, #singularity, #cats, #javascript, #victory, #robot {
   display: none;
 }
 h1 {
@@ -19,7 +19,12 @@ body {
   padding: 10px;
   margin-top: 20px;
 }
-
+ .results {
+   background: none;
+   border: none;
+   text-align: center;
+   width 70%;
+ }
 #name-input, #num-input{
   width: 300px;
 }

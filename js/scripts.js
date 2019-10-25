@@ -9,14 +9,18 @@ $(document).ready(function() {
       var business = parseInt($('input:radio[name=business]:checked').val());
       var workTraits = creativity + business;
       var userName = firstName + lastName;
+      var favNumber = $('#fav-number').val();
       $('.user-name').text(firstName);
       if (userName === "JohnConnor") {
         $('#victory').show();
         document.body.style.backgroundColor = "black";
       }
+      if (favNumber === "01101000 01101001") {
+        $('#robot').show();
+      }
       if (business === 3 && creativity === 3 && fear === 1) {
         $('#cats').show();
-      } else if (fear === 3 || creativity === 2 && fear <= 3){
+      } else if (fear === 3 || creativity === 2 && fear >= 3){
         $('#singularity').show();
         document.body.style.backgroundColor = "black";
       } else if(workTraits <= 3 && fear === 4) {
