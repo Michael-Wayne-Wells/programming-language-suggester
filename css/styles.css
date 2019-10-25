@@ -1,4 +1,4 @@
-#csharp, #python, #ruby, #singularity, #cats {
+#csharp, #python, #ruby, #singularity, #cats, #javascript, #victory {
   display: none;
 }
 h1 {
@@ -52,9 +52,9 @@ button.restart {
  border-radius: 10px;
 }
 
- .container {
-   padding:20px;
- }
+.container {
+ padding:20px;
+}
 
 .user-name {
   font-weight: bold;
@@ -62,4 +62,14 @@ button.restart {
 
 #singularity {
   color: white;
+}
+#victory {
+  color: white;
+}
+button.submit {
+  width: 100%;
+}
+
+img {
+  width: 600px;
 }

@@ -8,10 +8,15 @@ $(document).ready(function() {
       var fear = parseInt($('input:radio[name=fear]:checked').val());
       var business = parseInt($('input:radio[name=business]:checked').val());
       var workTraits = creativity + business;
+      var userName = firstName + lastName;
       $('.user-name').text(firstName);
-      if (business === 3 && creativity === 3) {
+      if (userName === "JohnConnor") {
+        $('#victory').show();
+        document.body.style.backgroundColor = "black";
+      }
+      if (business === 3 && creativity === 3 && fear === 1) {
         $('#cats').show();
-      } else if (fear = 3 || creativity === 2){
+      } else if (fear === 3 || creativity === 2 && fear <= 3){
         $('#singularity').show();
         document.body.style.backgroundColor = "black";
       } else if(workTraits <= 3 && fear === 4) {
@@ -21,10 +26,17 @@ $(document).ready(function() {
       } else if (workTraits >= 3 && fear === 1) {
         $('#python').show();
       } else {
-        $('#singularity').show();
+        $('#javascript').show();
       }
     });
     $("button.restart").click(function(event){
     location.reload();
     });
+    $("#click-to-hide").click(function() {
+    $(this).remove();
+    $('#singularity').hide();
+    $('#victory').show();
+    document.body.style.backgroundColor = "black";
+
   });
+});
