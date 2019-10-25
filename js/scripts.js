@@ -3,12 +3,12 @@ $(document).ready(function() {
     $(".survey").hide();
     event.preventDefault();
       var firstName = $('#first-name').val();
-      // var lastName =
+      var lastName = $('#last-name').val();
       var creativity = parseInt($('input:radio[name=creativity]:checked').val());
       var fear = parseInt($('input:radio[name=fear]:checked').val());
       var business = parseInt($('input:radio[name=business]:checked').val());
       var workTraits = creativity + business;
-      console.log(workTraits, business, fear, creativity, firstName);
+      $('.user-name').text(firstName);
       if (workTraits <= 3 && fear === 1) {
         $('#ruby').show();
       } else if (workTraits > 3 && fear >= 2) {
